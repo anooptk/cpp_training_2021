@@ -3,6 +3,18 @@
 #include "traingle.hpp"
 using namespace std;
 
+bool validate_triangle(const Triangle &t)
+{
+    if (!((t.s1 + t.s2) > t.s3) ||
+    !((t.s1 + t.s3) > t.s2) ||
+    !((t.s3 + t.s2) > t.s1))
+    {
+        cout << "!!!    Not a valid triangle    !!! \n\n";
+        return false;
+    }
+    return true;
+}
+
 double perimeter(const Triangle &t)
 {
     return t.s1 + t.s2 + t.s3;
@@ -21,10 +33,4 @@ void show(const Triangle &t, const char * prefix)
         << t.s2 << ", "
         << t.s3 << " >\n";
 
-    if (!((t.s1 + t.s2) > t.s3) ||
-        !((t.s1 + t.s3) > t.s2) ||
-        !((t.s3 + t.s2) > t.s1))
-        {
-            cout << "!!!    Not a valid triangle    !!! \n";
-        }
 }

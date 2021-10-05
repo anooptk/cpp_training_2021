@@ -6,6 +6,9 @@ struct Triangle {
     double s3;
 };
 
+
+bool validate_triangle(const Triangle &t);
+
 double perimeter(const Triangle &t);
 
 double area(const Triangle &t);

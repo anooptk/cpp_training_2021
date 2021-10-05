@@ -6,6 +6,9 @@ using namespace std;
 void test(const Triangle t, const char * prefix = "Test Triangle")
 {
     show(t, prefix);
+    if (!validate_triangle(t)) {
+        return;
+    }
     cout << "Perimeter of " << prefix << ": " << perimeter(t) << endl
          << "Area of " << prefix << ": " << area(t) << endl << endl;
 }
