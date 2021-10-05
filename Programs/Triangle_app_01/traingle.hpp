@@ -7,7 +7,9 @@ struct Triangle {
 };
 
 
-bool validate_triangle(const Triangle &t);
+bool validate_triangle(const double s1, double s2, double s3);
+
+bool initialize_triangle(Triangle &t, double s1, double s2, double s3);
 
 double perimeter(const Triangle &t);
 
