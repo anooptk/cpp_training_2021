@@ -1,5 +1,5 @@
 #include <iostream>
-#include "traingle.hpp"
+#include "triangle.hpp"
 using namespace std;
 
 

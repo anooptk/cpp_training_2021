@@ -1,6 +1,6 @@
 #include <iostream>
 #include <math.h>
-#include "traingle.hpp"
+#include "triangle.hpp"
 using namespace std;
 
 bool validate_triangle(const double s1, double s2, double s3)
