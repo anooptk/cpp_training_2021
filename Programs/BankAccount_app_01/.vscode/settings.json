@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.gnu": "makefile",
+        "iostream": "cpp"
+    }
+}
